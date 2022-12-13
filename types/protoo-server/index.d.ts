@@ -52,7 +52,7 @@ export type ConnectionRequestRejectFn = ((code: number, reason: string) => void)
 
 export type RequestCb = (request: ProtooRequest, accept: AcceptFn, reject: RejectFn) => void;
 
-export type AcceptFn = (data: any) => void;
+export type AcceptFn = (data?: any) => void;
 
 export type RejectFn = ((errorCode?: Error) => void) & ((errorCode: number, errorReason: Error | string) => void);
 
